@@ -204,3 +204,45 @@ img {
 .cv__datos__item {
     margin-bottom: 4rem;
 }
+
+/**hobies**/
+
+.hobbies {
+    background-color: var(--fondoB);
+    padding: 1rem 4rem 8rem 4rem;
+    margin: 5rem 0;
+    border-radius: 1rem;
+}
+
+.hobbies__barra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.syc {
+ width: 30%;
+}
+
+.rpg {
+ width: 35%;
+}
+
+.trekking {
+ width: 35%;
+}
+
+/**Presentacion**/
+
+.video{
+    margin: 2rem;
+    text-align: center;
+}
+
+/**Footer**/
+.footer {
+    text-align: center;
+    color: var(--paletaD);
+}
