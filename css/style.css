@@ -6,6 +6,8 @@
     --fondoB: #dce3e3;
     --paletaB: #465dbd ;
     --paletaC: #5d1072;
+    --paletaD: #e7ddeb;
+    --paletaD-hover: #c5bfc7;
     --gris: #757575;
     --blanco: #ffffff;
     --negro: #000000;
@@ -43,9 +45,11 @@ h2 {
 }
 h3 {
     font-size: 3.2rem;
+    margin-bottom: 1rem;
 }
 h4 {
     font-size: 2.8rem;
+    margin-bottom: 1rem;
 }
 img {
     max-width: 100%;
@@ -61,78 +65,131 @@ img {
     text-align: center;
 }
 
-.negrita{
+.negrita {
     font-weight: bold;
 }
 
-.bg{
+.bg {
     background-image: url("/img/fondo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.bg-oscuro{
+.bg-oscuro {
     background-color: rgb( 0 0 0 / 70% );
 }
 
-/**Navegacion**/
-.barra{
-    height: 5rem;
-    background-color: var(--gris);
-    display: flex;
-    justify-content: center;
-    
-}
-
-.navegacion{
-    width: 60%;
+.barra {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.enlace {
+    color: var(--paletaD);
+}
+
+.enlace:hover {
+    color: var(--paletaD-hover);
+}
+
+/**Header**/
+
+.header__logo {
+    padding-top: 4rem;
+}
+
+.header__perfil {
+    text-align: center;
+    margin-top: -5rem;
+ }
+
+ .img-perfil {
+    border-radius: 50%;
+    padding: 0 2rem;
+}
+
+.header__sub-texto {
+    font-size: 2.7rem;
+    margin-top: -1.5rem;
+}
+
+.github {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.github__texto {
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+/**Navegacion**/
+
+
+.navegacion {
+    display: flex;
+    gap: 2rem;
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 1.5rem;
+}
+
+
 
 /** Curriculum **/
 
-.cv{
+.cv {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     border-radius: 2%;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 }
 
-.periodo{
+
+
+.periodo {
     font-size: 1.5rem;
     text-decoration: underline;
 }
 
-.cv__datos{
+.cv__datos {
     background: linear-gradient(
         115deg,
          var(--paletaB) 5%,
          var(--paletaC) 100%
          );
-    padding: 3rem 2rem;
+    padding: 0 2rem;
     line-height: 1.5rem;
     border-radius: 5rem 0 0 1rem;
 }
 
-.img-perfil{
-    border-radius: 50%;
-    padding: 0 2rem;
-}
-
-.cv__datos__contacto{
+.cv__datos__contacto {
     margin-bottom: 8rem;
 }
 
-.rol{
+.rol {
     font-weight: bold;
     margin-bottom: -1rem;
     max-width: 70%;
 }
 
-.cv__contenido{
+.cv__contenido {
     background-image: linear-gradient(
         150deg,
         var(--fondoB) 0%,
@@ -143,6 +200,6 @@ img {
     border-radius: 0 1rem 5rem 0;
 }
 
-.cv__datos__item{
+.cv__datos__item {
     margin-bottom: 4rem;
 }
